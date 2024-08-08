@@ -1,4 +1,9 @@
 import { Module } from "@nestjs/common";
+import { EventModule } from "./event/event.module";
+import { SponsorModule } from "./sponsor/sponsor.module";
+import { VolunteerProfileModule } from "./volunteerProfile/volunteerProfile.module";
+import { ParticipantProfileModule } from "./participantProfile/participantProfile.module";
+import { UserModule } from "./user/user.module";
 import { HealthModule } from "./health/health.module";
 import { PrismaModule } from "./prisma/prisma.module";
 import { SecretsManagerModule } from "./providers/secrets/secretsManager.module";
@@ -11,6 +16,11 @@ import { ApolloDriver, ApolloDriverConfig } from "@nestjs/apollo";
 @Module({
   controllers: [],
   imports: [
+    EventModule,
+    SponsorModule,
+    VolunteerProfileModule,
+    ParticipantProfileModule,
+    UserModule,
     HealthModule,
     PrismaModule,
     SecretsManagerModule,
