@@ -4,6 +4,7 @@ import { SponsorModule } from "./sponsor/sponsor.module";
 import { VolunteerProfileModule } from "./volunteerProfile/volunteerProfile.module";
 import { ParticipantProfileModule } from "./participantProfile/participantProfile.module";
 import { UserModule } from "./user/user.module";
+import { DockerModule } from "./docker/docker.module";
 import { HealthModule } from "./health/health.module";
 import { PrismaModule } from "./prisma/prisma.module";
 import { SecretsManagerModule } from "./providers/secrets/secretsManager.module";
@@ -21,6 +22,7 @@ import { ApolloDriver, ApolloDriverConfig } from "@nestjs/apollo";
     VolunteerProfileModule,
     ParticipantProfileModule,
     UserModule,
+    DockerModule,
     HealthModule,
     PrismaModule,
     SecretsManagerModule,
